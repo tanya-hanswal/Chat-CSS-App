@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <title>Chat CSS App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="antialiased bg-gray-50">
+    <div class="bg-design relative w-full h-full overflow-hidden">
+      <div
+        class="bg-design1 absolute z-0 bg-gradient-to-b from-fuchsia-500 to-purple-900 rounded-b-full -top-40 -left-72 lg:-top-16 lg:-left-20"
+      ></div>
+
+      <div class="relative z-10 md:flex md:items-center">
+        <div class="flex justify-center py-14 md:flex-1 md:block">
+          <!-- Mobile -->
+          <div
+            class="mobile bg-gray-100 w-60 rounded-3xl shadow-xl md:ml-auto md:mr-36"
+          >
+            <div
+              class="bg-gradient-to-r from-purple-600 to-fuchsia-500 w-full h-16 rounded-t-2xl rounded-b-md"
+            >
+              <div class="bg-white mx-auto w-32 h-4 rounded-b-2xl"></div>
+
+              <div
+                class="headColor flex justify-between h-12 items-center px-3"
+              >
+                <div class="lessThan flex items-center">
+                  <i class="fa-solid fa-less-than text-white"></i>
+                  <img
+                    src="avatar.jpg"
+                    alt="avatar"
+                    class="avatar rounded-full"
+                  />
+                  <div class="name">
+                    <p class="text-xs text-white font-bold">Samuel Green</p>
+                    <p class="status text-gray-50 opacity-60">
+                      Available to Walk
+                    </p>
+                  </div>
+                  <!--end name-->
+                </div>
+                <!--end lessThan-->
+                <div class="dots">
+                  <i class="fa-solid fa-ellipsis-vertical text-white"></i>
+                </div>
+                <!--end dots-->
+              </div>
+              <!--end headColor -->
+
+              <div class="chatbox flex flex-col space-y-2 p-2">
+                <div
+                  class="msg1 bg-fuchsia-200 text-fuchsia-700 rounded-bl-none"
+                >
+                  That sounds great. I'd be happy to discuss more.
+                </div>
+                <!--end msg1-->
+                <div
+                  class="msg2 bg-fuchsia-200 text-fuchsia-700 rounded-bl-none"
+                >
+                  Could you send over some pictures of your dog please?
+                </div>
+                <!--end msg2-->
+                <div class="right flex space-x-3 self-end">
+                  <img
+                    src="dog-image-1.jpg"
+                    alt="dog-image-1"
+                    class="rounded-md h-10 w-10"
+                  />
+                  <img
+                    src="dog-image-2.jpg"
+                    alt="dog-image-2"
+                    class="rounded-md h-10 w-10"
+                  />
+                  <img
+                    src="dog-image-3.jpg"
+                    alt="dog-image-3"
+                    class="rounded-md h-10 w-10"
+                  />
+                </div>
+                <!--right-->
+                <div class="msg3 bg-white rounded-br-none self-end shadow-md">
+                  Here are a few pictures. She's a happy girl!
+                </div>
+                <!--end msg3-->
+                <div class="msg4 bg-white rounded-br-none self-end shadow-md">
+                  Can you make it?
+                </div>
+                <!--end msg4-->
+                <div
+                  class="msg5 bg-fuchsia-200 text-fuchsia-700 rounded-bl-none"
+                >
+                  She looks so happy! The time we discussed works. How long
+                  shall I take her out for?
+                </div>
+                <!--end msg5-->
+                <div
+                  class="amount-msg bg-gradient-to-l from-purple-600 to-fuchsia-500 p-2 w-40 flex justify-between items-center rounded-md rounded-bl-none"
+                >
+                  <div class="flex space-x-2 justify-start">
+                    <span
+                      class="inline-block w-3 h-3 border border-white opacity-50 rounded-full"
+                    ></span>
+                    <p class="text opacity-80">30 minute walk</p>
+                  </div>
+                  <div class="font-bold text-sm text-white">$29</div>
+                </div>
+                <!--end amount-msg-->
+                <div
+                  class="amount-msg bg-gradient-to-l from-purple-600 to-fuchsia-500 p-2 w-40 flex justify-between items-center rounded-md rounded-bl-none"
+                >
+                  <div class="flex space-x-2 justify-start">
+                    <span
+                      class="inline-block w-3 h-3 border border-white opacity-50 rounded-full"
+                    ></span>
+                    <p class="text opacity-80">1 hour walk</p>
+                  </div>
+                  <div class="font-bold text-sm text-white">$49</div>
+                </div>
+                <!--end amount-msg-->
+              </div>
+              <!--end chatbox-->
+              <div class="type-msg">
+                <div
+                  class="bg-white flex justify-between items-center p-1 rounded-full text-gray-400 w-full h-8 shadow-sm text-sm"
+                >
+                  <p class="pl-4">Type a message</p>
+                  <div
+                    class="arrow w-6 h-6 bg-zinc-950 text-white rounded-full"
+                  >
+                    <i class="fa-solid fa-greater-than"></i>
+                  </div>
+                  <!--end arrow-->
+                </div>
+              </div>
+              <!--type-msg-->
+            </div>
+          </div>
+        </div>
+        <!-- Mobile ends -->
+        <div class="heading px-8 text-center pb-12 md:flex-1 md:text-left">
+          <h1 class="text-4xl text-fuchsia-900 font-bold">Simple booking</h1>
+          <p class="para pt-6 text-gray-400 leading-relaxed md:max-w-md">
+            Stay in touch with our dog walkers through that chat interface. This
+            makes it easy to discuss arrangemnets and make bookings. Once the
+            walk has been completed you can rate your walker and book again all
+            through the chat.
+          </p>
+        </div>
+      </div>
+      <!--end relative z-10-->
+      <div
+        class="bg-design1 absolute z-0 bg-fuchsia-100 rounded-t-full h-172 w-120 -bottom-40 -right-72"
+      ></div>
+    </div>
+    <!--end bg-design-->
+  </body>
+</html>
